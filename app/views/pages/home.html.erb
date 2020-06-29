@@ -2,7 +2,7 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="navbar-logo"></a> <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <svg class="svg-inline--fa fa-bars fa-w-14 ml-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Borpac</a> <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <svg class="svg-inline--fa fa-bars fa-w-14 ml-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
       <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fas fa-bars ml-1"></i> --></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
@@ -28,7 +28,7 @@
   <header class="masthead">
     <div class="container">
       <div class="masthead-subheading">
-        Bem Vindo a Borpac!
+        <img src="https://res.cloudinary.com/drojjdhis/image/upload/v1593437042/Logo_dzny9r.gif" class="borpac-logo">
       </div>
       <div class="masthead-heading text-uppercase">
         O maior estoque de correias transportadoras do Brasil
@@ -44,7 +44,7 @@
       <div class="row text-center">
         <p class="text-muted">Borpac é uma empresa que se destaca entre os fornecedores de produtos industriais de borracha aos maiores grupos industriais do país, tendo 28 anos de experiência no mercado. Os produtos comercializados são testados, aprovados e certificados, dentro dos mais rigorosos padrões de qualidade. </p>
         <div class="col d-flex justify-content-center bord-bot">
-          <a type="submit" class="btn btn-quaternary btn-xl">Conheça a empresa</a>
+          <a type="submit" class="btn btn-quaternary btn-xl" data-toggle="modal" href="#infoempresa">Conheça a empresa</a>
         </div>
 
       </div>
@@ -54,7 +54,7 @@
     <div class="container">
       <div class="text-center">
         <h2 class="section-heading text-uppercase">Produtos</h2>
-        <h3 class="section-subheading text-muted">texto?</h3>
+        <h3 class="section-subheading text-muted">As crescentes demandas dos setores de Mineração, Siderurgia, Indústria, Agronegócios e outros exigem Correias Transportadoras de alta performance e melhor relação Custo x Benefício.</h3>
       </div>
       <div class="row">
         <div class="col-lg-4 col-sm-6 mb-4">
@@ -65,13 +65,12 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><img class="img-fluid" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="01-thumbnail"></a>
+            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1593437007/correiast_xuasnb.jpg", class: "img-fluid", alt: "01-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 Correias transportadoras
               </div>
               <div class="portfolio-caption-subheading text-muted">
-                texto?
               </div>
             </div>
           </div>
@@ -84,7 +83,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><img class="img-fluid" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="02-thumbnail"></a>
+            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1593437002/correias_xwx0ua.jpg", class: "img-fluid2", height: "267",  alt: "02-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                   Correias de transmissão em V
@@ -103,13 +102,13 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><img class="img-fluid" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="03-thumbnail"></a>
+            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1593438171/mangueiras_r001xx.png", class: "img-fluid2", height: "267", alt: "03-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 Mangueiras e mangotes
               </div>
               <div class="portfolio-caption-subheading text-muted">
-                Identity
+                texto?
               </div>
             </div>
           </div>
@@ -122,7 +121,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><img class="img-fluid" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="04-thumbnail"></a>
+            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1593437038/flexco_sqy9tw.png", class: "img-fluid2", height: "267", alt: "04-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 Materiais Flexco
@@ -141,10 +140,29 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><img class="img-fluid" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="05-thumbnail"></a>
+            </div><%= image_tag("https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80", class: "img-fluid2", height: "267", alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 Emendas de parafuso Super Screw
+              </div>
+              <div class="portfolio-caption-subheading text-muted">
+                texto?
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+          <div class="portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
+                <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
+              </div>
+            </div><%= image_tag("https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80", class: "img-fluid2", height: "267", alt: "05-thumbnail" ) %></a>
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading">
+                Correias Elevadoras
               </div>
               <div class="portfolio-caption-subheading text-muted">
                 texto?
@@ -298,22 +316,18 @@
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
+        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="modal-body">
                 <!-- Project Details Go Here-->
                 <h2 class="text-uppercase">Correias transportadoras</h2>
-                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="01-full">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2020</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul><button class="btn btn-primary" data-dismiss="modal" type="button"><svg class="svg-inline--fa fa-times fa-w-11 mr-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 352 512" data-fa-i2svg="">
+                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://res.cloudinary.com/drojjdhis/image/upload/v1593437007/correiast_xuasnb.jpg" alt="01-full">
+                <p>As Correias Transportadoras EXTRABELT Série PL e Série SC, e Elevadoras Série EPL, são as melhores respostas às necessidades das empresas. Suas características de alta qualidade e desempenho conferem elevada confiabilidade operacional aos usuários.</p>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
-                 Close Project</button>
+                 Voltar a Página Inicial</button>
               </div>
             </div>
           </div>
@@ -324,22 +338,18 @@
   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
+        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="modal-body">
                 <!-- Project Details Go Here-->
                 <h2 class="text-uppercase">Correias de transmissão em V</h2>
-                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="02-full">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2020</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul><button class="btn btn-primary" data-dismiss="modal" type="button"><svg class="svg-inline--fa fa-times fa-w-11 mr-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 352 512" data-fa-i2svg="">
+                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://res.cloudinary.com/drojjdhis/image/upload/v1593437002/correias_xwx0ua.jpg" alt="02-full">
+                <p>Fabricadas sob rígido controle de qualidade, as Correias Industriais em "V" EXTRABELT apresentam destacada performance e elevada vida útil em diversas aplicações industriais. Suas características construtivas e o uso de matérias primas nobres em sua fabricação, conferem propriedades anti-estáticas,resistência a óleos e mínimo alongamento, resultando em excelente relação Custo x Benefício.</p>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
-                 Close Project</button>
+                 Voltar a Página Inicial</button>
               </div>
             </div>
           </div>
@@ -350,22 +360,18 @@
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
+        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="modal-body">
                 <!-- Project Details Go Here-->
                 <h2 class="text-uppercase">Mangueiras e mangotes</h2>
-                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="03-full">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2020</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul><button class="btn btn-primary" data-dismiss="modal" type="button"><svg class="svg-inline--fa fa-times fa-w-11 mr-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 352 512" data-fa-i2svg="">
+                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://res.cloudinary.com/drojjdhis/image/upload/v1593438171/mangueiras_r001xx.png" alt="03-full">
+                <p>Produzidas com matérias-primas nobres e equipamentos da mais alta tecnologia disponível, as Mangueiras de borracha H-FLEX atendem às mais variadas demandas industriais com desempenho superior. A Borpac conta ainda com uma completa linha de Mangotes em borracha, Curvas e desenvolvimento de Peças especiais feitas sob encomenda para diversas aplicações industriais. </p>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
-                 Close Project</button>
+                 Voltar a Página Inicial</button>
               </div>
             </div>
           </div>
@@ -376,22 +382,18 @@
   <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
+        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="modal-body">
                 <!-- Project Details Go Here-->
                 <h2 class="text-uppercase">Materiais Flexco</h2>
-                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="04-full">
+                <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://res.cloudinary.com/drojjdhis/image/upload/v1593437038/flexco_sqy9tw.png" alt="04-full">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2020</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul><button class="btn btn-primary" data-dismiss="modal" type="button"><svg class="svg-inline--fa fa-times fa-w-11 mr-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 352 512" data-fa-i2svg="">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
-                 Close Project</button>
+                 Voltar a Página Inicial</button>
               </div>
             </div>
           </div>
@@ -402,7 +404,7 @@
   <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
+        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -411,13 +413,9 @@
                 <h2 class="text-uppercase">Emendas de parafuso Super Screw</h2>
                 <p class="item-intro text-muted">Texto bonitinho</p><img class="img-fluid d-block mx-auto" src="https://images.unsplash.com/photo-1580537782709-a15bb3c13a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="05-full">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2020</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul><button class="btn btn-primary" data-dismiss="modal" type="button"><svg class="svg-inline--fa fa-times fa-w-11 mr-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 352 512" data-fa-i2svg="">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
-                 Close Project</button>
+                 Voltar a Página Inicial</button>
               </div>
             </div>
           </div>
@@ -428,7 +426,7 @@
   <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"></div>
+        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -437,20 +435,39 @@
                 <h2 class="text-uppercase">Project Name</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="06-full">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2020</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul><button class="btn btn-primary" data-dismiss="modal" type="button"><svg class="svg-inline--fa fa-times fa-w-11 mr-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 352 512" data-fa-i2svg="">
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
-                 Close Project</button>
+                 Voltar a Página Inicial</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div><!-- Bootstrap core JS-->
+  </div>
+  <div class="portfolio-modal modal fade" id="infoempresa" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="">
+        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
+          <div class="wrapper-page" style="">
+            <div class="container-page">
+              <h1 class="page-title">A Empresa</h1>
+              <p class="page-content">Borpac é uma empresa que se destaca entre os fornecedores de produtos industriais de borracha aos maiores grupos industriais do país, tendo 28 anos de experiência no mercado. Os produtos comercializados são testados, aprovados e certificados, dentro dos mais rigorosos padrões de qualidade.</p>
+              <h1 class="page-subsubtitle text-uppercase">Missão</h1>
+              <p class="page-content">Especificar produtos adequados às necessidades do mercado com alto padrão tecnológico e assistência personalizada.</p>
+              <h1 class="page-subsubtitle text-uppercase">Política e Qualidade</h1>
+              <p class="page-content">A Borpac busca na comercialização de correias transportadoras e afins a melhoria contínua do seu sistema de gestão da qualidade, atendendo aos requisitos regulamentares e estatutários, prestando assistência técnica personalizada, motivando seus empregados, preservando o meio ambiente e contribuindo para a prosperidade e bem-estar da sociedade.</p>
+              <h1 class="page-subsubtitle text-uppercase">Responsabilidade Social</h1>
+              <p class="page-content"> O sistema de gestão da qualidade estimula os colaboradores a desenvolverem interesses e participarem ativamente na melhoria do serviço e ambiente de trabalho, equilíbrio entre a vida profissional e familiar, crescimento individual, participação em projetos sociais da comunidade onde se encontra estabelecida e respeito e proteção do meio ambiente.</p>
+              <h1 class="page-subsubtitle text-uppercase">Certificados</h1>
+              <p class="page-content">Em sua constante busca pela excelência, a Borpac dá um novo salto rumo à qualidade e aperfeiçoamento de seus processos internos. A BORPAC hoje possui CERTIFICAÇÃO ISO:9001 versão 2015.</p>
+              <h1 class="page-subsubtitle text-uppercase">Premiações</h1>
+              <p class="page-content">A Borpac busca na comercialização de correias transportadoras e afins a melhoria contínua do seu sistema de gestão da qualidade, atendendo aos requisitos regulamentares e estatutários, prestando assistência técnica personalizada, motivando seus empregados, preservando o meio ambiente e contribuindo para a prosperidade e bem-estar da sociedade.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div><!-- Modal 3--><!-- Bootstrap core JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script> <!-- Third party plugin JS-->
 
