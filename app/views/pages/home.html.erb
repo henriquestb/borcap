@@ -16,6 +16,9 @@
             <a class="nav-link js-scroll-trigger" href="#about">Campos de Atuação</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#distri">Distribuidores</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Clientes</a>
           </li>
           <li class="nav-item">
@@ -68,9 +71,6 @@
             </div>
             <div class="carousel-item">
               <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236485/ADA2BC77-1237-4FEB-B164-844A00836A06_vlx4xs.jpg" alt="Fourth slide">
-            </div>
-            <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236487/2D9B5602-C75C-416A-9D31-66B6C9235243_1_t3bxvq.jpg" alt="Fifth slide">
             </div>
             <div class="carousel-item">
               <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236473/E293D2AE-D3C0-41C0-8360-D6D0B1CA3D70_2_xt4umt.jpg" alt="Sixth slide">
@@ -225,7 +225,7 @@
     <div class="row">
       <div class="col-xs-12 col-lg-4">
         <a href="/areas/mineracao">
-        <div class="card-solutions card-solutions-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/drojjdhis/image/upload/v1594212022/MINERAC%CC%A7A%CC%83O_nb2tbu.jpg); visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;" data-sr-id="0">
+        <div class="card-solutions card-solutions-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/drojjdhis/image/upload/v1594212024/SIDERURGICA_E_FUNDIC%CC%A7A%CC%83O_x3dvph.jpg); visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;" data-sr-id="0">
           <div class="card-solutions-description">
             <h2>Mineração</h2>
           </div>
@@ -257,7 +257,7 @@
       </div>
       <div class="col-xs-12 col-lg-4">
         <a href="/areas/siderurgia">
-        <div class="card-solutions card-solutions-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/drojjdhis/image/upload/v1594212024/SIDERURGICA_E_FUNDIC%CC%A7A%CC%83O_x3dvph.jpg); visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;" data-sr-id="8">
+        <div class="card-solutions card-solutions-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/drojjdhis/image/upload/v1594212022/MINERAC%CC%A7A%CC%83O_nb2tbu.jpg); visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;" data-sr-id="8">
           <div class="card-solutions-description">
             <h2>Siderúrgicas e Fundições</h2>
           </div>
@@ -272,6 +272,29 @@
         </div></a>
       </div>
     </div>
+    </div>
+  </section>
+  <section class="page-section bg-light" id="distri">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Principais clientes da Borpac</h2>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
+          </div>
+        </div>
+      </div>
     </div>
   </section><!-- Team-->
   <section class="page-section bg-light" id="team">
@@ -297,7 +320,7 @@
       </div>
     </div>
   </section><!-- Clients-->
-  <div class="py-5">
+<!--   <div class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6 my-3">
@@ -314,7 +337,7 @@
         </div>
       </div>
     </div>
-  </div><!-- Contact-->
+  </div> --><!-- Contact-->
   <section class="page-section" id="contact">
     <div class="container">
       <div class="text-center">

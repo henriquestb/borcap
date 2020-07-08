@@ -70,7 +70,6 @@ document.addEventListener('turbolinks:load', () => {
         target: "#mainNav",
         offset: 74,
     });
-
     // Collapse Navbar
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
