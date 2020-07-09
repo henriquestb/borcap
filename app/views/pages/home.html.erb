@@ -275,27 +275,21 @@
     </div>
   </section>
   <section class="page-section bg-light" id="distri">
-    <div class="container">
       <div class="text-center">
-        <h2 class="section-heading text-uppercase">Principais clientes da Borpac</h2>
+        <h2 class="section-heading text-uppercase">Distribuidores Autorizados</h2>
       </div>
-      <div class="row">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
+      <div class="containerr">
+          <div class="carousel3d">
+            <div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594238768/REALFLEX_gfpymz.jpg", class: "item a", width: "200", height: "100") %></div>
+            <div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594238767/FLEXCO_lf3r8b.jpg", class: "item b", width: "200", height: "100") %></div>
+            <div class="item c"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594238768/MLT_jov1uh.jpg", class: "sos-logo", width: "200", height: "100") %></div>
+            <div class="item d"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594238768/parramatta_h3f370.gif", class: "sos-logo", width: "200", height: "100") %></div>
+            <div class="item e"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594238768/FENNER_DUNLOP_g87got.jpg", class: "sos-logo", width: "200", height: "100") %></div>
+            <div class="item f"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594238768/GATES_i3fvak.png", class: "sos-logo", width: "200", height: "100") %></div>
           </div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
-          </div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
-          </div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="prev"><i class="fas fa-angle-right fa-3x"></i></div>
+        <div class="next"><i class="fas fa-angle-left fa-3x"></i></div></div>
+
   </section><!-- Team-->
   <section class="page-section bg-light" id="team">
     <div class="container">
@@ -574,12 +568,9 @@
   </div><!-- Modal 3--><!-- Bootstrap core JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script> <!-- Third party plugin JS-->
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> <!-- Contact form JS-->
-
   <script src="assets/mail/jqBootstrapValidation.js"></script>
   <script src="assets/mail/contact_me.js"></script> <!-- Core theme JS-->
-
   <script src="js/scripts.js"></script>
 </body>
 
@@ -635,6 +626,27 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+</script>
+<script>
+  var carousel3d = $(".carousel3d"),
+    currdeg = 0;
 
+  $(".prev").on("click", { d: "n" }, rotate);
+  $(".next").on("click", { d: "p" }, rotate);
+
+  function rotate(e) {
+    if (e.data.d == "n") {
+      currdeg = currdeg - 60;
+    }
+    if (e.data.d == "p") {
+      currdeg = currdeg + 60;
+    }
+    carousel3d.css({
+      "-webkit-transform": "rotateY(" + currdeg + "deg)",
+      "-moz-transform": "rotateY(" + currdeg + "deg)",
+      "-o-transform": "rotateY(" + currdeg + "deg)",
+      transform: "rotateY(" + currdeg + "deg)"
+    });
+  }
 </script>
 
