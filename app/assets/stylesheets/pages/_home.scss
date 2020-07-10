@@ -10641,7 +10641,7 @@ ul, ol {
   background: #000;
   width: 250px;
   height: 200px;
-  line-height: 200px;
+  line-height: 190px;
   font-size: 5em;
   text-align: center;
   color: #FFF;
@@ -10694,4 +10694,12 @@ ul, ol {
   height: 200px;
   position: relative;
   perspective: 1000px;
+}
+
+.spacearround {
+  justify-content: space-around;
+}
+
+.sos-logo {
+  border-radius: 10px;
 }
