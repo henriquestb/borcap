@@ -5899,7 +5899,7 @@ a.close.disabled {
 }
 
 .carousel-orange {
-  border: 9px solid #f76b13;
+  border: 9px solid #484545;
 }
 .carousel-inner::after {
   display: block;
@@ -10295,7 +10295,7 @@ header.masthead .masthead-heading {
   border-bottom: 4px solid #484545;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.11rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
@@ -10900,4 +10900,8 @@ ul, ol {
 .custom {
   width: 264px !important;
   font-size: 1.425rem !important;
+}
+
+.bcenter {
+  line-height: 101px;
 }
