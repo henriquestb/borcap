@@ -1981,6 +1981,12 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
+@media (max-width: 300) {
+  .showbtn {
+    display: none;
+  }
+}
+
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
@@ -2001,7 +2007,7 @@ pre code {
     display: none;
   }
   .showbtn {
-  display: none;
+    display: none;
   }
 }
 @media (max-width: 767.98px) {
@@ -2027,6 +2033,9 @@ pre code {
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
+  }
+  .showbtn {
+    display: none;
   }
 }
 @media (max-width: 1199.98px) {
@@ -10253,7 +10262,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 374px) {
   header.masthead {
-    padding-bottom: 50.5rem;
+    padding-bottom: 57.5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -10269,6 +10278,15 @@ header.masthead .masthead-heading {
   position: absolute;
   top: 33em;
 }
+  .prev {
+    display: none;
+  }
+  .next {
+    display: none;
+  }
+  .showbtn {
+    display: none;
+  }
 }
 #portfolio .portfolio-item {
   max-width: 25rem;
@@ -10493,6 +10511,15 @@ li {
     padding: 0 30px 20px 20px;
     text-align: left;
   }
+  .prev {
+    display: block;
+  }
+  .next {
+    display: block;
+  }
+  .showbtn {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .timeline > li {
@@ -10514,6 +10541,10 @@ li {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
+  .showbtn {
+    display: block;
+  }
+
 }
 @media (min-width: 1200px) {
   header.masthead {
@@ -10535,6 +10566,9 @@ li {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
+  }
+  .showbtn {
+    display: block;
   }
 }
 .team-member {
@@ -10690,6 +10724,9 @@ ul, ol {
 .home_video {
   display: none;
 }
+.showsuply {
+  display: none;
+}
 }
 
 @media (min-width: 768px) {
@@ -10697,9 +10734,6 @@ ul, ol {
     padding: 100px 25px 40px 25px;
 }
 .showup {
-  display: block;
-}
-.showbtn {
   display: block;
 }
 .home_video {
@@ -10710,11 +10744,14 @@ ul, ol {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
 }
+.showsuply {
+  display: none;
+}
 }
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-bottom: 43.5rem;
+    padding-bottom: 58rem;
   }
   .wrapper-page {
     padding: 100px 25px 40px 25px;
@@ -10723,6 +10760,12 @@ ul, ol {
   font-size: 3rem;
   line-height: 3rem;
 }
+  .showbtn {
+    display: block;
+  }
+  .showsuply {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {
