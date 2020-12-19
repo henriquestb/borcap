@@ -10265,7 +10265,7 @@ header.masthead .masthead-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media (min-width: 374px) {
+@media (min-width: 280px) {
   header.masthead {
     padding-bottom: 57.5rem;
   }
@@ -10541,7 +10541,7 @@ li {
     padding: 0 20px 20px;
   }
   .showbtn {
-    display: block;
+    display: initial;
   }
 
 }
@@ -10567,7 +10567,7 @@ li {
     padding: 0 100px 20px 20px;
   }
   .showbtn {
-    display: block;
+    display: initial;
   }
 }
 .team-member {
@@ -10766,7 +10766,7 @@ ul, ol {
   line-height: 3rem;
 }
   .showbtn {
-    display: block;
+    display: initial;
   }
   .showsuply {
     display: block;
