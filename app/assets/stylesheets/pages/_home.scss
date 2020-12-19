@@ -574,6 +574,9 @@ pre code {
   .carousel {
     display: none;
   }
+  .showbtn{
+    display: none;
+  }
   .home_video {
     display: none;
   }
@@ -583,6 +586,9 @@ pre code {
   .container {
     max-width: 540px;
   }
+  .showbtn {
+    display: none;
+  }
   .carousel {
     display: none;
   }
@@ -590,6 +596,9 @@ pre code {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+  .showbtn {
+    display: none;
   }
   .carousel {
     display: none;
@@ -609,6 +618,9 @@ pre code {
   }
   .carousel {
     display: block;
+  }
+  .page-title {
+    font-size: 3em;
   }
 }
 
@@ -1511,6 +1523,9 @@ pre code {
   .offset-lg-11 {
     margin-left: 91.6666666667%;
   }
+  .page-title {
+    font-size: 3.4em !important;
+  }
 }
 @media (min-width: 1200px) {
   .col-xl {
@@ -1981,11 +1996,6 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-@media (max-width: 300) {
-  .showbtn {
-    display: none;
-  }
-}
 
 @media (max-width: 575.98px) {
   .table-responsive-sm {
@@ -10278,12 +10288,6 @@ header.masthead .masthead-heading {
   position: absolute;
   top: 33em;
 }
-  .prev {
-    display: none;
-  }
-  .next {
-    display: none;
-  }
   .showbtn {
     display: none;
   }
@@ -10747,6 +10751,12 @@ ul, ol {
 .showsuply {
   display: none;
 }
+.hidecamp {
+  display: none;
+}
+.showcamp {
+  display: block;
+}
 }
 
 @media (min-width: 992px) {
@@ -10776,6 +10786,12 @@ ul, ol {
   font-size: 3rem;
   line-height: 3rem;
 }
+  .showcamp {
+    display: none;
+  }
+  .hidecamp {
+    display: block;
+  }
 }
 
 @media (min-width: 1500px) {
