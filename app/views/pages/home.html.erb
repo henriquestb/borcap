@@ -2,7 +2,7 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://res.cloudinary.com/drojjdhis/image/upload/v1594397492/NOME_-_BORPAC_ramgwi.png" alt=""></a> <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <svg class="svg-inline--fa fa-bars fa-w-14 ml-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"> <%= image_tag 'LogoBorpac.png' %></a> <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <svg class="svg-inline--fa fa-bars fa-w-14 ml-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
       <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fas fa-bars ml-1"></i> --></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
@@ -70,28 +70,28 @@
           </ol>
           <div class="carousel-inner carousel-orange">
             <div class="carousel-item active">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1607106413/PRIMEIRA_FOTO_DO_CARROSSEL_yxeavm.jpg" alt="First slide">
+              <%= image_tag 'Carrousel1.jpg', class: 'ajusteimg', alt: 'First Slide' %>
             </div>
             <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236476/491B83C8-E99F-4DAE-95F2-2AE0EB88AB77_mhsusj.jpg" alt="Second slide">
+              <%= image_tag 'Carrousel2.jpg', class: 'ajusteimg', alt: 'Second Slide' %>
             </div>
             <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236477/52F7B0D7-78A2-4F66-8B4B-41C1367FA70A_tkqqyv.jpg" alt="Third slide">
+              <%= image_tag 'Carrousel3.jpg', class: 'ajusteimg', alt: 'Third Slide' %>
             </div>
             <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236485/ADA2BC77-1237-4FEB-B164-844A00836A06_vlx4xs.jpg" alt="Fourth slide">
+              <%= image_tag 'Carrousel4.jpg', class: 'ajusteimg', alt: 'Fourth Slide' %>
             </div>
             <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236473/E293D2AE-D3C0-41C0-8360-D6D0B1CA3D70_2_xt4umt.jpg" alt="Sixth slide">
+              <%= image_tag 'Carrousel5.jpg', class: 'ajusteimg', alt: 'Fifth Slide' %>
             </div>
             <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236489/88A5D6CE-9F62-40B7-845C-2A370FCD08F9_amiisp.jpg" alt="Seventh slide">
+              <%= image_tag 'Carrousel6.jpg', class: 'ajusteimg', alt: 'Sixth Slide' %>
             </div>
             <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236489/39F73CFF-D9F8-48A4-9092-496672247595_lv9z5m.jpg" alt="Ninth slide">
+              <%= image_tag 'Carrousel7.jpg', class: 'ajusteimg', alt: 'Seventh Slide' %>
             </div>
             <div class="carousel-item">
-              <img class="ajusteimg" src="https://res.cloudinary.com/drojjdhis/image/upload/v1594236495/9E49B220-A526-4B6D-AB62-61A8D35D2B38_jglpku.jpg" alt="Tenth slide">
+              <%= image_tag 'Carrousel8.jpg', class: 'ajusteimg', alt: 'Eighth Slide' %>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -103,11 +103,11 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>
-      <div class="col d-flex spacearround bord-bot">
-        <a type="" class="btn btn-primary btn-xl showbtn custom text-uppercase bcenter" data-toggle="modal" href="#infoempresa">Sobre Nós</a>
-        <a type="" class="btn btn-primary btn-xl showbtn custom text-uppercase" data-toggle="modal" href="#premiosempresaimagem">Certificados premiações progamas</a>
-        <a type="" class="btn btn-primary btn-xl showbtn custom text-uppercase bcenter" data-toggle="modal" href="#eventosaimagem">Eventos</a>
+        <div class="col d-flex spacearround bord-bot">
+          <a type="" class="btn btn-primary btn-xl showbtn custom text-uppercase bcenter" data-toggle="modal" href="#infoempresa">Sobre Nós</a>
+          <a type="" class="btn btn-primary btn-xl showbtn custom text-uppercase" data-toggle="modal" href="#premiosempresaimagem">Certificados premiações progamas</a>
+          <a type="" class="btn btn-primary btn-xl showbtn custom text-uppercase bcenter" data-toggle="modal" href="#eventosaimagem">Eventos</a>
+        </div>
       </div>
     </div>
   </section><!-- Portfolio Grid-->
@@ -125,7 +125,7 @@
           <li>ANTIESTÁTICA E ANTICHAMA (PADRÃO MSHA)</li>
           <li>ALTA TEMPERATURA (AT; TSH; SUPER-TSH)</li>
         </div> -->
-        <img class="img-fluid3" src="https://res.cloudinary.com/drojjdhis/image/upload/v1607472370/coberturas_com_fundo_ajzknb.png" alt="05-thumbnail">
+        <%= image_tag 'Produto0.png', class: 'img-fluid2', alt:   "05-thumbnail" %>
         <p class="section-subheading text-muted">Contando com equipe de vendas altamente qualificada, a Borpac coloca à disposição de seus clientes, um suporte técnico avançado e produtos de alta qualidade. A equipe de engenheiros e técnicos de aplicação prestam suporte técnico em campo e acompanham a performance dos produtos fornecidos. Além disso, representantes regionais aproximam a relação com os clientes em seus estados de origem, possibilitando um atendimento personalizado em todo o território nacional.</p>
       <div class="row">
         <div class="col-lg-4 col-sm-6 mb-4">
@@ -136,7 +136,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596316089/CORREIA_TRANSP_TEXTEIS_SERIE_PL_4_epxtpp.jpg", class: "img-fluid", height: "267", width: '356', alt: "01-thumbnail") %></a>
+            </div><%= image_tag('Produto1.jpg', class: "img-fluid", height: "267", width: '356', alt: "01-thumbnail") %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS TRANSPORTADORAS <br> TÊXTEIS <br> SERIE PL
@@ -154,7 +154,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x sow" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594231138/9C298803-8469-423F-BF18-FD0D06B51CB4_edfopq.jpg", class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto2.jpg', class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS TRANSPORTADORAS <br> STEEL CORD <br> SERIE SC
@@ -172,7 +172,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596316767/CORREIA_ANTICUT_1_tnlkfw.png", class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto3.png', class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS TRANSPORTADORAS <br> COM ANTI RASGO <br> "ANTICUT"
@@ -190,7 +190,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596316896/CORREIA_SIDEWALL_5_voegag.jpg", class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto4.jpg', class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS TRANSPORTADORAS SIDEWALL <br> SÉRIE EXTRAWALL
@@ -208,7 +208,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596316973/CORREIA_TUBULATOR_AIRBELT_1_ayqzto.jpg", class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto5.jpg', class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS TRANSPORTADORAS TUBULATOR AIRBELT
@@ -226,7 +226,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596317093/CORREIA_PIPE_CONVEYOR_1_qxt20c.bmp", class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto6.bmp', class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS TRANSPORTADORAS <br>PIPE CONVEYOR
@@ -244,7 +244,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596317209/CORREIA_ELEVADORA_TE%CC%82XTIL_3_skulwy.jpg", class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto7.jpg', class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS ELEVADORAS <br>TÊXTEIS <br> SÉRIE EPL
@@ -262,7 +262,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596317312/CORREIA_ELEVADORA_CABO_DE_AC%CC%A7O_11_kampd5.jpg", class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto8.jpg', class: "img-fluid2", height: "267", width: '356', alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIAS ELEVADORAS <br>CABO DE AÇO <br> SÉRIE ESC
@@ -280,7 +280,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594233299/EFF9AF31-44D6-44EE-BB25-9FD2FAD10C5E_xlcwsm.jpg", class: "img-fluid2", height: "267", alt: "05-thumbnail" ) %></a>
+            </div><%= image_tag('Produto9.jpg', class: "img-fluid2", height: "267", alt: "05-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 EMENDA MECÂNICA <br> DE PARAFUSO <br> SUPER-SCREW
@@ -298,7 +298,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596317438/MATERIAL_FLEXCO_3_dmxzqd.jpg", class: "img-fluid", height: "267", width: "356",  alt: "02-thumbnail" ) %></a>
+            </div><%= image_tag('Produto10.jpg', class: "img-fluid", height: "267", width: "356",  alt: "02-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                   ALINHADORES <br>E RASPADORES <br>FLEXCO
@@ -316,7 +316,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596317521/MANGUEIRAS_E_MANGOTES_7_v771x0.jpg", class: "img-fluid", height: "267", alt: "03-thumbnail" ) %></a>
+            </div><%= image_tag('Produto11.jpg', class: "img-fluid", height: "267", alt: "03-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 MANGUEIRAS E MANGOTES PARA POLPA DE MINÉRIO
@@ -334,7 +334,7 @@
                 <svg class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" data-fa-i2svg="">
                 <path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-            </div><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1594233242/2423191B-7652-46CA-B247-BA27FAADE2AC_fgqlip.jpg", class: "img-fluid", height: "267", alt: "04-thumbnail" ) %></a>
+            </div><%= image_tag('Produto12.jpg', class: "img-fluid", height: "267", alt: "04-thumbnail" ) %></a>
             <div class="portfolio-caption">
               <div class="portfolio-caption-heading">
                 CORREIA GEMINADAS, SINCRONIZADORAS E TRANSMISSÃO EM “V”
@@ -441,7 +441,6 @@
         </div></a>
       </div>
       <div class="col-xs-12 col-lg-4">
-        <!-- <a data-toggle="modal" href="#areasModal12"> -->
         <div class="card-solutions card-solutions-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://res.cloudinary.com/drojjdhis/image/upload/v1596547800/USINA_DE_GRA%CC%83OES_E_SUCROALCOOLEIRAS_3_phrkgz.jpg); visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0s;" data-sr-id="11">
           <div class="card-solutions-description">
             <h2>USINA DE GRÃOS</h2>
@@ -458,12 +457,12 @@
       <div class="containerr">
           <div class="carousel3d showbtn carousel-3d-basic">
             <div class= "carousel-3d-inner">
-              <div class="item a"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1603294586/EXTRABELT_pjrb9c.png", class: "sos-logo", width: "200", height: "100") %></div>
-              <div class="item b"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1603294458/H-FLEX_nthbr0.png", class: "sos-logo", width: "200", height: "100") %></div>
-              <div class="item c"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1603294459/FENNER_cexvtp.png", class: "sos-logo", width: "240", height: "145") %></div>
-              <div class="item d"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596636559/Flexco-LOGO_lc0dle.png", class: "sos-logo", width: "200", height: "100") %></div>
-              <div class="item e"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1603294457/MLT_aixyw1.png", class: "sos-logo", width: "240", height: "145") %></div>
-              <div class="item f"><%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1596636753/GATES_LOGO_lcvqq5.png", class: "sos-logo", width: "240", height: "145") %></div>
+              <div class="item a"><%= image_tag("logo1.png", class: "marcas-logo", width: "200", height: "100") %></div>
+              <div class="item b"><%= image_tag("logo2.png", class: "marcas-logo", width: "200", height: "100") %></div>
+              <div class="item c"><%= image_tag("logo3.png", class: "marcas-logo", width: "240", height: "145") %></div>
+              <div class="item d"><%= image_tag("logo4.png", class: "marcas-logo", width: "200", height: "100") %></div>
+              <div class="item e"><%= image_tag("logo5.png", class: "marcas-logo", width: "240", height: "145") %></div>
+              <div class="item f"><%= image_tag("logo6.png", class: "marcas-logo", width: "240", height: "145") %></div>
             </div>
           </div>
         <div class="prev"><i class="fas fa-angle-right fa-3x"></i></div>
@@ -476,26 +475,9 @@
       <div class="text-center">
         <h2 class="section-heading text-uppercase">Clientes Parceiros</h2>
       </div>
-      <img class="img-fluid2" src="https://res.cloudinary.com/drojjdhis/image/upload/v1596750579/logos_1_pag_ggknuh.png" alt="05-thumbnail">
+      <%= image_tag("logo0.png", class: "img-fluid2", alt: "05-thumbnail") %>
     </div>
   </section><!-- Clients-->
-<!--   <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 my-3">
-          <a href="#!"><<a href="#!"><%= image_tag("arcelor.png", class: "sos-logo", width: "200", height: "100") %></a></a>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3">
-          <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/designmodo.jpg" alt="designmodo"></a>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3">
-          <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/themeforest.jpg" alt="themeforest"></a>
-        </div>
-        <div class="col-md-3 col-sm-6 my-3">
-          <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/creative-market.jpg" alt="creative-market"></a>
-        </div>
-      </div>
-    </div>
   </div> --><!-- Contact-->
   <section class="page-section" id="contact">
     <div class="container">
@@ -528,9 +510,9 @@
             </h2>
           </div>
         </div>
-        <img src="https://res.cloudinary.com/drojjdhis/image/upload/v1603155473/Iso-9001_-_BRANCO_-_TRANSPARENTE_ozmhtl.png" class="iso-logo" alt="">
+      <%= image_tag("Iso.png", class: "iso-logo") %>
       </div>
-  </div>
+    </div>
   </section><!-- Footer-->
   <footer class="footer py-4">
     <div class="container">
@@ -555,7 +537,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">Correias <br> transportadoras</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1597925295/CORREIAS_TRANSPORTADORAS_TE%CC%82XTEIS_SERIE_PL_ftz9c6.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal1.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -578,7 +560,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIAS TRANSPORTADORAS STEEL CORD SERIE SC</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598116553/CORREIAS_TRANSPORTADORAS_STEEL_CORD_SERIE_SC_jflc76.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->                <%= image_tag("Modal2.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -601,7 +583,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIAS TRANSPORTADORAS COM ANTI RASGO "ANTICUT"</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598116887/CORREIAS_TRANSPORTADORAS_COM_ANTI_RASGO_ANTICUT_01_fqhfks.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal3.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -624,8 +606,8 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIAS TRANSPORTADORAS SIDEWALL SÉRIE EXTRAWALL</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598452225/CORREIAS_TRANSPORTADORAS_SIDEWALL_SERIE_ESTRAWALL_01_gl6gcq.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
-                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598452223/CORREIAS_TRANSPORTADORAS_SIDEWALL_SERIE_ESTRAWALL_02_qqrrzx.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal4.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+                <%= image_tag("Modal5.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -648,7 +630,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIAS TUBULATOR AIRBELT</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598452220/CORREIAS_TUBULATOR_AIRBELT_1_hsn1vw.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal6.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -671,8 +653,8 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIAS PIPE CONVEYOR</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598117446/CORREIAS_PIPE_CONVEYOR_01_eb6mvj.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
-                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598117448/CORREIAS_PIPE_CONVEYOR_02_bgv7cp.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal7.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+                <%= image_tag("Modal8.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -695,7 +677,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIAS ELEVADORAS TÊXTEIS SÉRIE EPL</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598452729/CORREIAS_ELEVADORAS_TE%CC%82XTEIS_SERIE_EPL_f00cw0.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal9.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -718,7 +700,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIAS ELEVADORAS CABO DE AÇO SÉRIE ESC</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598117770/CORREIAS_ELEVADORAS_CABO_DE_AC%CC%A7O_SERIE_ESC_nlbwk8.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal10.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -741,8 +723,8 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">EMENDA MECÂNICA DE PARAFUSO SUPER-SCREW</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598117981/EMENDA_MECA%CC%82NICA_DE_PARAFUSO_SUPER-SCREW_01_ro8iso.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
-                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598117985/EMENDA_MECA%CC%82NICA_DE_PARAFUSO_SUPER-SCREW_02_aymyua.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->            <%= image_tag("Modal11.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+                <%= image_tag("Modal12.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -766,7 +748,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">ALINHADORES E RASPADORES FLEXCO</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598118201/ALINHADORES_E_RASPADORES_FLEXCO_e4vv3n.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->             <%= image_tag("Modal13.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -789,7 +771,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">MANGUEIRAS E MANGOTES PARA POLPA DE MINÉRIO</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598118316/MANGUEIRAS_E_MANGOTES_PARA_POLPA_DE_MINE%CC%81RIO_pctbhn.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->             <%= image_tag("Modal14.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -812,7 +794,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here-->
 <!--                 <h2 class="text-uppercase">CORREIA DE TRANSMISSÃO EM "V" GEMINADAS E SINCRONIZADORAS</h2>
- -->                <%= image_tag("https://res.cloudinary.com/drojjdhis/image/upload/v1598118386/CORREIAS_DE_TRANSMISSA%CC%83O_EM_V_GEMINADAS_E_SINCRONIZADORAS_ylbhac.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
+ -->             <%= image_tag("Modal15.png", class: "img-fluid2", alt: "05-thumbnail" ) %>
                 <br>
                 <button class="btn btn-primary showbtn" data-dismiss="modal" type="button">
                 <path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times mr-1"></i> -->
@@ -826,30 +808,12 @@
     </div>
   </div>
   <div class="portfolio-modal modal fade" id="infoempresa" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- <div class="modal-dialog">
-        <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
-          <div class="wrapper-page" style="">
-            <div class="container-page">
-              <h1 class="page-title text-center">A Empresa</h1>
-              <img class="img-fluid2" src="https://res.cloudinary.com/drojjdhis/image/upload/v1607106827/SOBRE_NO%CC%81S_hnrfb6.png" alt="05-thumbnail">
-              <p class="page-content">Com sede em Contagem – MG e atuando no mercado de produtos industriais de borracha desde junho de 1992, a Borpac Comércio Importação e Exportação Ltda, é uma empresa que se destaca entre os fornecedores de produtos industriais de borracha aos maiores grupos industriais do país. Os produtos comercializados são testados, aprovados e certificados, dentro dos mais rigorosos padrões de qualidade.
-              Constituída por profissionais altamente qualificados, e atuando em todo o território nacional, a empresa preza pela manutenção de parcerias duradouras com seus clientes e fornecedores, expandindo os negócios com qualidade no atendimento e prestando assistência técnica personalizada.
-              </p>
-              <h1 class="page-subsubtitle text-uppercase">Missão</h1>
-              <p class="page-content">Comercializar produtos adequados às necessidades do mercado com alto padrão tecnológico e assistência personalizada.</p>
-              <h1 class="page-subsubtitle text-uppercase">Política e Qualidade</h1>
-              <p class="page-content">A Borpac busca na comercialização de seus produtos, a melhoria contínua do seu sistema de gestão da qualidade, atendendo aos requisitos regulamentares e estatutários, prestando assistência técnica personalizada, motivando seus empregados, preservando o meio ambiente e contribuindo para a prosperidade e bem-estar da sociedade.</p>
-              <h1 class="page-subsubtitle text-uppercase">Responsabilidade Social</h1>
-              <p class="page-content"> O sistema de gestão da qualidade estimula os colaboradores a desenvolverem interesses e participarem ativamente na melhoria do serviço e ambiente de trabalho, equilíbrio entre a vida profissional e familiar, crescimento individual, participação em projetos sociais da comunidade onde se encontra estabelecida respeito e proteção ao meio ambiente.</p>
-            </div>
-          </div>
-    </div> -->
     <div class="modal-dialog">
       <div class="col-lg-12">
         <div class="wrapper-pagee" style="">
           <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
           <h1 class="page-title text-center">Sobre Nós</h1>
-          <img class="img-fluid2 bigcenter" src="https://res.cloudinary.com/drojjdhis/image/upload/v1607106827/SOBRE_NO%CC%81S_hnrfb6.png" alt="05-thumbnail">
+          <%= image_tag("Info1.png", class: "img-fluid2 bigcenter", alt: "05-thumbnail") %>
         </div>
       </div>
     </div>
@@ -860,7 +824,7 @@
         <div class="wrapper-pagee" style="">
           <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
           <h1 class="page-title text-center">CERTIFICADOS, PROGRAMAS E PREMIAÇÕES</h1>
-          <img class="img-fluid2 bigcenter" src="https://res.cloudinary.com/drojjdhis/image/upload/v1607106834/CERTIFICADO_PREMIAC%CC%A7O%CC%83ES_PROGRAMAS_sigcfv.png" alt="05-thumbnail">
+          <%= image_tag("Info2.png", class: "img-fluid2 bigcenter", alt: "05-thumbnail") %>
         </div>
       </div>
     </div>
@@ -871,7 +835,7 @@
         <div class="wrapper-pagee" style="">
           <div class="close-modal" data-dismiss="modal"><i class="fas fa-times fa-2x"></i></div>
           <h1 class="page-title text-center">Eventos</h1>
-          <img class="img-fluid2 bigcenter" src="https://res.cloudinary.com/drojjdhis/image/upload/v1607106829/EVENTOS_flo2vt.png" alt="05-thumbnail">
+          <%= image_tag("Info3.png", class: "img-fluid2 bigcenter", alt: "05-thumbnail") %>
         </div>
       </div>
     </div>
